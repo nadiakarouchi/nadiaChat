@@ -1,0 +1,35 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda&family=Merienda+One&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3 p {
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #061339;
+}
+header{
+    background: url(../img/background.jpg);
+    height: 200px;
+}
+h1{
+    line-height: 200px;
+    font-family: 'Merienda One', cursive;
+    /* font-size: larger; */
+}
+h2, h3{
+    font-family: 'Merienda', cursive;
+}
+section{
+    background-color: rgb(231, 231, 231);
+}
+.h2Color{
+ color: #2F4073;
+}
+p{
+    text-align: justify;
+}

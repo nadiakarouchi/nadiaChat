@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myCat</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.1.1-dist/css/bootstrap.css">
+    <!-- My style CSS -->
+    <link rel="stylesheet" href="css/styleCat.css">
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="bootstrap-5.1.1-dist/bootstrap-icons-1.5.0/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="container-fluid mx-auto sticky-top p-2">
+        <div class="container-sm px-lg-5 px-xl-5">
+            <a class="text-decoration-none" href="index.html"><h2 class="fs-6 text-white">Oh MyCat</h2></a>
+        </div>
+    </nav>
+    <header class="container-fluid mx-auto text-center p-2">
+        <h1 class="text-white">Adoptez un chat trop bon !</h1>
+    </header>
+    <main class="container-fluid bg-light p-2">
+        <div class="container-sm px-lg-5 px-xl-5">
+            <div class="row">
+                <!-- div slide -->
+            <div class="col-12 col-lg-8 col-xl-8 p-2 order-lg-2">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/chat_1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/chat_2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/chat_3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/chat_4.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/chat_5.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <!-- div slide finish -->
+
+            <!-- div form -->
+            <div class="col-12 col-lg-4 col-xl-4 p-2 order-lg-1">
+                <form action="#" method="get" name="inscription" id="formInscription" class="row">
+                    <div class="my-1 col-12">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Choix du chat</option>
+                            <option value="1">- Sushi -</option>
+                            <option value="2">- Maki -</option>
+                            <option value="3">- Sashimi -</option>
+                            <option value="3">- Yakitori -</option>
+                            <option value="3">- Onigri -</option>
+                          </select>
+                    </div>
+                    <div class="my-1 col-12">
+                        <label for="floatingTextarea2">Raison d'adoption</label>
+                        <textarea class="form-control" placeholder="Saisissez ici les raisons pour lesquelles vous souhaitez adopter ce chat..." id="floatingTextarea2" style="height: 150px"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary" value="submit" id="submit" onclick="myFunction()">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <!-- div form finish -->
+        </div>
+        </div>
+    </main>
+    <!-- div section -->
+    <section class="container-fluid p-2 mx-auto text-center">
+        <div class="container-sm px-lg-5 px-xl-5">
+            <div class="row">
+                <div class="col-12 col-lg-7 col-xl-7">
+                    <h2 class="px2 py-4 h2Color">Nos chats à adopter</h2>
+                    <p class="p-2">Sed quid est quod in hac causa maxime homines admirentur et reprehendant meum consilium, cum ego idem antea multa decreverim, que magis ad hominis dignitatem quam ad rei publicae necessitatem pertinerent? Supplicationem quindecim dierum decrevi sententia mea. Rei publicae satis erat tot dierum quot C. Mario ; dis immortalibus non erat exigua eadem gratulatio quae ex maximis bellis. Ergo ille cumulus dierum hominis est dignitati tributus.</p>
+                    <p class="p-2">Haec igitur prima lex amicitiae sanciatur, ut ab amicis honesta petamus, amicorum causa honesta faciamus, ne exspectemus quidem, dum rogemur; studium semper adsit, cunctatio absit; consilium vero dare audeamus libere. Plurimum in amicitia amicorum bene suadentium valeat auctoritas, eaque et adhibeatur ad monendum non modo aperte sed etiam acriter, si res postulabit, et adhibitae pareatur.</p>
+                    
+                </div>
+                <div class="col-12 col-lg-5 col-xl-5">
+                    <img src="img/tete-chat.png" alt="logo" class="img-fluid mt-4" style="background-color: #2F4073;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid bg-dark pt-2 pb-1">
+        <div class="container-sm text-end text-white px-lg-5 px-xl-5">
+            <h3 class="fs-6">&copy; Oh MyCat</h3>
+        </div>
+    </footer>
+
+    <!-- Bootstrap js -->
+    <script src="bootstrap-5.1.1-dist/js/bootstrap.js"></script>
+
+    <!-- my Js -->
+    <script>
+        function myFunction() {
+          document.getElementById("formInscription").innerHTML = 'Your order has been submited';
+        //   alert('Your order has been submited');
+        }
+        </script>
+    
+</body>
+</html>
+
+
+
+
+
+
